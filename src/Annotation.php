@@ -52,7 +52,7 @@ class Annotation {
                 $key = 'nil';
             }
 
-            $description = $description . "@property $type \${$field->{'Field'}} Type: {$field->{'Type'}}, Extra: {$field->{'Extra'}}, Default: $default, Key: $key\n";
+            $description = $description . "@property $type \${$field->{'Field'}} Type: {$field->{'Type'}}, Key: $key\n";
         }
 
         return $description;
