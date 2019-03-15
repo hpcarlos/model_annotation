@@ -1,5 +1,5 @@
 {
-    "name": "qsun/model-annotation",
+    "name": "hpcarlos/model_annotation",
     "license": "LGPL",
     "version": "1.2",
     "authors": [
@@ -9,7 +9,7 @@
             }
     ],
     "autoload": {
-        "psr-4": { "qsun\\ModelAnnotation\\": "src/" }
+        "psr-4": { "hpcarlos\\model_annotation\\": "src/" }
     },
     "require": {
         "php" : ">=5.3.2",
