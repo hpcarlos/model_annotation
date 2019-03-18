@@ -1,13 +1,13 @@
 <?php
 
-namespace qsun\ModelAnnotation;
+namespace hpcarlos\model_annotation;
 
 use Illuminate\Support\ServiceProvider;
 use Log;
 
 class AnnotationServiceProvider extends ServiceProvider {
     protected $commands = [
-        'qsun\ModelAnnotation\AnnotateCommand'
+        'hpcarlos\model_annotation\AnnotateCommand'
     ];
 
     public function register() {
