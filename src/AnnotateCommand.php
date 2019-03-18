@@ -1,6 +1,6 @@
 <?php
 
-namespace qsun\ModelAnnotation;
+namespace hpcarlos\model_annotation;
 use AnnotatingClass;
 
 use DB;
@@ -17,10 +17,9 @@ class AnnotateCommand extends Command {
     }
 
     public function handle() {
-        foreach (DB::select('SHOW TABLES') as $table) {
-            foreach (get_object_vars($table) as $table_name) {
-                Annotation::annotateTable(app(), $table_name);
-            }
+      $result = DB::select("SELECT * FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema' AND tablename not in ('migrations','oauth_auth_codes','oauth_access_tokens','oauth_refresh_tokens','oauth_clients','oauth_personal_access_clients')");
+        foreach ($result as $key => $value) {
+          Annotation::annotateTable(app(), $value->tablename);
         }
     }
 
