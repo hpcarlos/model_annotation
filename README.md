@@ -61,7 +61,7 @@ This package only works with MySQL for now.
 ```
 'providers' => [
     ....
-    hpcarlos\ModelAnnotation\AnnotationServiceProvider::class
+    hpcarlos\model_annotation\AnnotationServiceProvider::class
 ]
 ```
 
