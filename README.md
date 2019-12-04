@@ -40,7 +40,7 @@ This package only works with MySQL for now.
 ```
 "require": {
     ...
-    "qsun/model-annotation": "dev-master"
+    "hpcarlos/model_annotation": "dev-master"
 }
 ```
 
@@ -53,7 +53,7 @@ This package only works with MySQL for now.
 ```
 'providers' => [
     ....
-    qsun\ModelAnnotation\AnnotationServiceProvider::class
+    hpcarlos\ModelAnnotation\AnnotationServiceProvider::class
 ]
 ```
 
