@@ -42,6 +42,14 @@ This package only works with MySQL for now.
     ...
     "hpcarlos/model_annotation": "dev-master"
 }
+.... AND ....
+"repositories": {
+    ...
+    "model_annotation": {
+        "type": "vcs",
+        "url": "https://github.com/hpcarlos/model_annotation.git"
+    }
+}
 ```
 
 
