@@ -6,6 +6,7 @@ use Log;
 use ReflectionClass;
 use DB;
 use Illuminate\Support\Pluralizer;
+use Illuminate\Support\Str;
 
 class Annotation {
     public static function annotateTable($app, $table) {
@@ -13,7 +14,7 @@ class Annotation {
             $filename = basename($file);
             $name = substr($filename, 0, strlen($filename)-4);
             $singular_name = Pluralizer::singular($table);
-            $possible_class_name = studly_case($singular_name);
+            $possible_class_name = Str::studly($singular_name);
 
             if ($name == $possible_class_name) {
                 Log::debug('File match with table: ' . $name);
