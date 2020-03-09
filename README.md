@@ -1,4 +1,4 @@
-# Model Annotation for Laravel 5
+# Model Annotation for Laravel 6
 
 ModelAnnotation puts database schema aside with your model files for easy reference.
 
